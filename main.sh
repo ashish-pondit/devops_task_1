@@ -1,7 +1,9 @@
 !/bin/bash
 
-git clone https://github.com/ohmyzsh/ohmyzsh.git code
+git clone $REPO code
 
 cd code
 
-git log --pretty="Author: %an%nCommit: %n%w(100,4,4)%B%n%n"
+clear
+
+git log -n $N --pretty="Author: %an%nCommit: %n%w(100,4,4)%B%n%n"
